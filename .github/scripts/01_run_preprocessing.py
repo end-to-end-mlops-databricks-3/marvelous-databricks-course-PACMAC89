@@ -1,7 +1,7 @@
 from src.mlops_course import preprocessing
 
-def main():
-    # Daten laden
+def main() -> None:
+    """Führt den Preprocessing-Prozess aus."""
     train_df, _ = preprocessing.load_data()
 
     # Aufteilen
