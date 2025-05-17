@@ -1,5 +1,6 @@
 from src.mlops_course import preprocessing
 
+
 def main() -> None:
     """Führt den Preprocessing-Prozess aus."""
     train_df, _ = preprocessing.load_data()
@@ -11,6 +12,7 @@ def main() -> None:
     preprocessing.save_data(X_train, X_test, "processed")
 
     print("✅ Preprocessing completed successfully.")
+
 
 if __name__ == "__main__":
     main()
