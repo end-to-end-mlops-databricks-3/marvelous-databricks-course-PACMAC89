@@ -3,7 +3,7 @@ from pathlib import Path  # Falls nicht schon vorhanden
 import os
 import pandas as pd
 import pytest
-from mlops_course import data_processor
+from house_price import data_processor
 
 def test_load_data() -> None:
     """Testet das Laden von Trainings- und Testdaten."""
