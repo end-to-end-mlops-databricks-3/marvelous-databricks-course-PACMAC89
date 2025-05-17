@@ -1,4 +1,4 @@
-from src.mlops_course import preprocessing
+from src.house_price import preprocessing
 
 
 def main() -> None:
