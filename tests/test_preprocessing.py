@@ -1,13 +1,8 @@
-# tests/test_preprocessing.py
 from pathlib import Path  # Falls nicht schon vorhanden
-
 import pandas as pd
-#<<<<<<< HEAD
 import pytest
 from house_price import data_processor
-#=======
-#from mlops_course import data_processor
-#>>>>>>> 7710432efc35a2971c9e40e2502263c20b7b5116
+
 
 
 def test_load_data() -> None:
