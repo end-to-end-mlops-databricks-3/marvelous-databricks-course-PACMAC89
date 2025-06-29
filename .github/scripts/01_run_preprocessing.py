@@ -1,0 +1,18 @@
+from src.house_price import preprocessing
+
+
+def main() -> None:
+    """Führt den Preprocessing-Prozess aus."""
+    train_df, _ = preprocessing.load_data()
+
+    # Aufteilen
+    X_train, X_test, _, _ = preprocessing.split_data(train_df)
+
+    # Speichern
+    preprocessing.save_data(X_train, X_test, "processed")
+
+    print("✅ Preprocessing completed successfully.")
+
+
+if __name__ == "__main__":
+    main()
